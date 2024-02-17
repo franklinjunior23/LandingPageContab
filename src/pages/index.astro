@@ -1,16 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar/index.astro";
+import Header from "../components/Header/Header.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-	<section class="bg-[#364e97] ">
-		<main class="max-w-screen-xl mx-auto flex justify-between text-xs py-1.5 text-white">
-			<span>contacto@vag-global.com</span>
-			<span>Español</span>
-		</main>
-	</section>
+  <section class="bg-[#364e97]">
+    <main
+      class="max-w-screen-xl px-4 mx-auto flex justify-between text-xs py-1.5 text-white"
+    >
+      <span>contacto@vag-global.com</span>
+      <span>Español</span>
+    </main>
+  </section>
   <main class="max-w-screen-xl mx-auto">
     <Navbar />
+	<Header/>
   </main>
 </Layout>
